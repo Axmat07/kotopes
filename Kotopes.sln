@@ -7,9 +7,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".SolutionItems", ".Solution
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Domain", "0 - Domain", "{6F48B840-8DD3-42C0-B254-BC41CFE81329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotopes.Domain", "Kotopes.Domain\Kotopes.Domain.csproj", "{E9D4C4E5-0719-40D3-8D7A-23A11CBB81A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{FFC582AE-9B16-4A4F-BB9E-15972B3CC199}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Persistence", "2 - Persistence", "{CC31C169-DA54-4680-8D1C-9A0F65DCC5F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - EntryPoints", "3 - EntryPoints", "{748DA19D-548A-4484-84B7-298D3DD1FBFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9D4C4E5-0719-40D3-8D7A-23A11CBB81A6} = {6F48B840-8DD3-42C0-B254-BC41CFE81329}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9D4C4E5-0719-40D3-8D7A-23A11CBB81A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D4C4E5-0719-40D3-8D7A-23A11CBB81A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D4C4E5-0719-40D3-8D7A-23A11CBB81A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D4C4E5-0719-40D3-8D7A-23A11CBB81A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
