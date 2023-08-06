@@ -1,4 +1,4 @@
-﻿using Kotopes.Domain;
+﻿using Kotopes.Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kotopes.Persistance;

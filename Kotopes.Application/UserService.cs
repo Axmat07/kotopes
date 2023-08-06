@@ -1,5 +1,5 @@
-﻿using Kotopes.Domain;
-using Microsoft.EntityFrameworkCore;
+﻿using Kotopes.Domain.Abstractions;
+using Kotopes.Domain.Models;
 
 namespace Kotopes.Application;
 

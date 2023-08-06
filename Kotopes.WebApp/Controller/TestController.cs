@@ -1,5 +1,5 @@
 ﻿using Kotopes.Application;
-using Kotopes.Domain;
+using Kotopes.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controller;

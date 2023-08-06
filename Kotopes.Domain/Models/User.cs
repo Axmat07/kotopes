@@ -1,4 +1,6 @@
-﻿namespace Kotopes.Domain;
+﻿using Kotopes.Domain.Abstractions;
+
+namespace Kotopes.Domain.Models;
 
 public class User : Entity
 {

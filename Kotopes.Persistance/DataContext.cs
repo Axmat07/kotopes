@@ -1,4 +1,4 @@
-﻿using Kotopes.Domain;
+﻿using Kotopes.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClassLibrary1;
