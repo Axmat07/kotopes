@@ -1,6 +1,6 @@
 using ClassLibrary1;
 using Kotopes.Application;
-using Kotopes.Domain;
+using Kotopes.Domain.Abstractions;
 using Kotopes.Persistance;
 using Microsoft.EntityFrameworkCore;
 

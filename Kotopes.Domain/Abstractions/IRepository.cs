@@ -1,4 +1,4 @@
-﻿namespace Kotopes.Domain;
+﻿namespace Kotopes.Domain.Abstractions;
 
 public interface IRepository<T> where T : Entity
 {
