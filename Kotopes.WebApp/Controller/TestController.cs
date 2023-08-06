@@ -24,7 +24,7 @@ public class TestController : ControllerBase
     
     [HttpPost]
     [Route("[action]")]
-    public async Task<IActionResult> AddTestUser()
+    public async Task<IActionResult> AddTestUser(CancellationToken token)
     {
         var user = new User
         {
@@ -33,11 +33,11 @@ public class TestController : ControllerBase
             LastName = "TestLastName",
             TelegramId = "TestTelegramID"
         };
-        var id = await _userService.AddUser(user);
+        var id = await _userService.AddUser(user, token);
         
         if (id != null)
         {
-            await _userService.DeleteUser(id.Value);
+            await _userService.DeleteUser(id.Value, token);
         }
 
         return Ok(id);

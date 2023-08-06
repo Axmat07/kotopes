@@ -15,6 +15,7 @@ builder.Services.AddDbContext<DataContext>(c =>
 });
 builder.Services.AddScoped<DbContext, DataContext>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IShelterService, ShelterService>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 
 var app = builder.Build();

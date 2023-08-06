@@ -12,25 +12,25 @@ public class UserService : IUserService
         _repository = repository;
     }
     
-    public async Task<long?> AddUser(User user)
+    public async Task<long?> AddUser(User user, CancellationToken token)
     {
-        if (await IsUserExist(user.Email))
+        if (await IsUserExist(user.Email, token))
         {
             return null;
         }
-        var id = await _repository.AddAsync(user);
+        var id = await _repository.AddAsync(user, token);
         return id;
     }
 
-    public async Task<bool> DeleteUser(long userId)
+    public async Task<bool> DeleteUser(long userId, CancellationToken token)
     {
-        var result = await _repository.DeleteAsync(userId);
+        var result = await _repository.DeleteAsync(userId, token);
         return result;
     }
 
-    private async Task<bool> IsUserExist(string email)
+    private async Task<bool> IsUserExist(string email, CancellationToken token)
     {
-        var user = (await _repository.GetAllAsync()).FirstOrDefault(u => u.Email == email);
+        var user = (await _repository.GetAllAsync(token)).FirstOrDefault(u => u.Email == email);
         return user != null;
     }
 }
