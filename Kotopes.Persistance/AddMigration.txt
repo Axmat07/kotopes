@@ -1,0 +1,1 @@
+dotnet ef migrations add <Name> --context DataContext --startup-project ..\Kotopes\Kotopes.WebApp\Kotopes.WebApp.csproj --project ..\Kotopes\Kotopes.Persistance\Kotopes.Persistance.csproj
